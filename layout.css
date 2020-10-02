@@ -3,3 +3,71 @@ Layout file
 */
 
 *{}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body main{
+    margin-top: 5rem;
+    margin: 5rem 1rem 1rem 1rem;
+}
+
+body nav {
+    margin: 0;
+    padding: 0;
+    height: 4rem;
+    background-color: #f1f1f1;
+    position: fixed;
+    top:0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+body nav div{
+    display:flex;
+    align-items: center;
+    height:100%;
+    justify-content: flex-start;
+    width: 50%;
+    margin-left: 1.5rem;
+}
+body nav .links{
+    justify-content: flex-end;
+
+}
+
+body nav a{
+    text-align: center;
+    color: #333333;
+    opacity: 0.75;
+    height: 75%;
+    text-decoration: none;
+    line-height: 3rem;
+    padding: 0px 20px 0px 20px;
+}
+
+body nav a.active{
+    color: #000000;
+}
+
+body nav a:hover:not(.active){
+    opacity: 1;
+}
+
+
+body nav a.active:hover{
+    opacity: 1;
+}
+
+.title{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  body nav .links {
+    display: none;
+  }
+}
