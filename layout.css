@@ -63,11 +63,14 @@ body nav a.active:hover{
 }
 
 .title{
-    font-size: 20px;
+    font-size: 30px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   body nav .links {
     display: none;
+  }
+  body nav div{
+    width: 100%;
   }
 }
